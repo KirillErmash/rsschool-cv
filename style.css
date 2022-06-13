@@ -104,12 +104,13 @@
    margin: 0 auto; /*выравниваем по центру*/
    color: rgb(0, 0, 0);
  }
- .rss {
+ .rsslink {
     width: 121px;
     height: 45px;
     background-image: url("../rsschool-cv/assets/img/rs_school_js.png");
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: auto;
  }
  .githublink a{
    color: #313131;
