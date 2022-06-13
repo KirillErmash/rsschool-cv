@@ -60,19 +60,19 @@
    text-decoration-line: underline;
  }
  .tel {
-   list-style-image: url('/assets/svg/icons8-call-24.png'); /*изображение вместо маркера списка*/
+   list-style-image: url('/rsschool-cv/assets/svg/icons8-call-24.png'); /*изображение вместо маркера списка*/
  }
  .mail {
-   list-style-image: url('/assets/svg/icons8-at-sign-24.png');
+   list-style-image: url('/rsschool-cv/assets/svg/icons8-at-sign-24.png');
  }
  .github {
-   list-style-image: url('/assets/svg/icons8-github-24.png');
+   list-style-image: url('/rsschool-cv/assets/svg/icons8-github-24.png');
  }
  .diskord {
-   list-style-image: url('/assets/svg/icons8-discord-24.png');
+   list-style-image: url('/rsschool-cv/assets/svg/icons8-discord-24.png');
  }
  .city {
-   list-style-image: url('/assets/svg/icons8-location-24.png');
+   list-style-image: url('/rsschool-cv/assets/svg/icons8-location-24.png');
  }
  .main-container {
    display: flex; /*резмещение секций по горизонтали*/
@@ -105,8 +105,11 @@
    color: rgb(0, 0, 0);
  }
  .rss {
-   width: 121px;
-   height: 45px;
+    width: 121px;
+    height: 45px;
+    background-image: url("../rsschool-cv/assets/img/rs_school_js.png");
+    background-size: contain;
+    background-repeat: no-repeat;
  }
  .githublink a{
    color: #313131;
