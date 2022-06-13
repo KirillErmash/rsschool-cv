@@ -1,0 +1,119 @@
+@font-face { /*подключаем шрифт*/
+    font-family: Anek Tamil;
+   src: url("assets/fons/AnekTamil-VariableFont_wdth\,wght.ttf");
+ }
+ * { /*Универсальный селектор (звездочка) подразумевает все элементы встретившиеся на странице*/
+   box-sizing: border-box;/*границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента*/
+ }
+ h1, h2 {
+   font-family: Anek Tamil;font-family: Anek Tamil;/*указывем шрифт*/
+   }
+ body {
+     font-family: 'Anek Odia', sans-serif;/*указывем шрифт*/
+     min-height: 100vh; /*минимальная высота body не может быть меньше высоты страницы*/
+     margin: 0;
+     padding: 0;
+     display: flex; /*подключаем флексбокс*/
+     flex-direction: column; /*направление главной оси по вертикали*/
+     justify-content: space-between; /*выравнивание по вертикали и прижатие футера к низу страницы*/
+   }
+ .header {
+   background-color: rgb(238, 236, 213);
+ }
+ .footer{
+   background-color: rgb(238, 236, 213);
+ }
+ .container { /*ограничивает ширину контента и центрирует его на странице по горизонтали*/
+   max-width: 1440px; /*контейнер стремится занять всю ширину окна браузера. Так и происходит до тех пор, пока ширина окна не превышает 1440px*/
+   margin: 0 auto;
+ }
+ .nav-list {
+   display: flex; /*создаем флекс контейнер что бы разместить навигацию в строку*/
+   align-items: center; /*выравниваем по центру по высоте*/
+   list-style: none; /*убираем маркеры списка*/
+   flex-wrap: wrap /*переносы при уменьшении окна браузера */
+ }
+ .nav-link {
+   padding: 0 20px; /*отступы между элементами списка. Отступы добавляем ссылкам, а не элементам списка. Это позволяет увеличить площадь, по которой можно кликнуть*/
+   line-height: 40px;
+ }
+ .nav-item a {
+   color: #313131;
+   text-decoration: none; /*убираем подчеркивание*/
+   transition: color 0.5s; /*чтобы при наведении свойство менялось плавно*/
+ }
+ .nav-item a:hover { /*иинтерактивность при наведении при помощи псевдокласса ховер*/
+   color: #acacac;
+   text-decoration-line: underline;
+ }
+ html {
+   scroll-behavior: smooth; /*плавная прокрутка якорных ссылок*/
+ }
+ .contacts-item a {
+   color: #313131;
+   transition: color 0.5s;
+   text-decoration: none;
+   cursor: pointer; /*изменение внешнего вида курсора, для ссылок автоматичски*/
+ }
+ .contacts-item a:hover {
+   color: #acacac;
+   text-decoration-line: underline;
+ }
+ .tel {
+   list-style-image: url('/assets/svg/icons8-call-24.png'); /*изображение вместо маркера списка*/
+ }
+ .mail {
+   list-style-image: url('/assets/svg/icons8-at-sign-24.png');
+ }
+ .github {
+   list-style-image: url('/assets/svg/icons8-github-24.png');
+ }
+ .diskord {
+   list-style-image: url('/assets/svg/icons8-discord-24.png');
+ }
+ .city {
+   list-style-image: url('/assets/svg/icons8-location-24.png');
+ }
+ .main-container {
+   display: flex; /*резмещение секций по горизонтали*/
+   flex-wrap: wrap; /*включаем переносы флекс элементов*/
+ }
+ .section {
+   width: 50%; /*размещаем секции в две колонки*/
+ }
+ @media (max-width: 768px) { /*медиазапрос, который указывает, что, при уменьшении ширины экрана до 768px, секция будет занимать всю ширину*/
+   .section {
+     width: 100%;
+   }
+ }
+ body {
+   font-size: 18px; /*размер шрифта*/
+   font-weight: 400; /*жирность шрифта*/
+   line-height: 1.5; /*расстояние между строчками, по умолчанию 1.3*/
+ }
+ .section-title { /*стилизация заголовков*/
+   font-size: 20px;
+   font-weight: 400;
+   text-transform: uppercase; /*текст из заглавных букв*/
+   letter-spacing: 5px; /*пасстояние между буквами*/
+ }
+ .footer-container {
+   display: flex;
+   justify-content: space-between; /*выравнивание по главное оси*/
+   align-items: center; /*выравнивание по центру оси блока*/
+   margin: 0 auto; /*выравниваем по центру*/
+   color: rgb(0, 0, 0);
+ }
+ .rss {
+   width: 121px;
+   height: 45px;
+ }
+ .githublink a{
+   color: #313131;
+   text-decoration: none;
+   transition: color 0.5s;
+ }
+ .githublink a:hover {
+   color: #acacac;
+   text-decoration-line: underline;
+ }
