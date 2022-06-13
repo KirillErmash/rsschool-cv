@@ -1,2 +1,3 @@
-https://kirillermash.github.io/rsschool-cv/cv
-https://kirillermash.github.io/rsschool-cv/)
+https://KirillErmash.github.io/rsschool-cv/cv
+
+https://KirillErmash.github.io/rsschool-cv/
